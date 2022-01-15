@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contentTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.titleDay {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f0cf4e;
+}
+
+.titleNight {
+  font-size: 30px;
+  font-weight: bold;
+  color: #566cb5;
+}
+
+.currentlyNight {
+  font-size: 26px;
+  font-weight: bold;
+  color: #566cb5;
+  margin-left: 10px;
+}
+
+.currentlyDay {
+  font-size: 26px;
+  font-weight: bold;
+  color: #f0cf4e;
+  margin-left: 10px;
+}
+
+.wrapper {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.containerCurrently {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.containerSearch {
+  width: 50%;
+}
+
+.image {
+  width: 32px;
+  height: 32px;
+}
+
