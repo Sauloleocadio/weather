@@ -7,7 +7,7 @@ import { ReactComponent as WiNightClear } from "../../assets/currently/night.svg
 
 import styles from "./styles.module.css";
 
-function Header({ currently, search, handleChangeInput, loading }) {
+function Header({ currently, search, loadingButton, getWeather }) {
   return (
     <div className={styles.container}>
       <div className={styles.contentTitle}>
@@ -35,9 +35,9 @@ function Header({ currently, search, handleChangeInput, loading }) {
         <div className={styles.containerSearch}>
           <Search
             currently={currently}
-            loading={false}
-            value={search}
-            handleChangeInput={handleChangeInput}
+            loadingButton={loadingButton}
+            search={search}
+            getWeather={getWeather}
           />
         </div>
       </div>

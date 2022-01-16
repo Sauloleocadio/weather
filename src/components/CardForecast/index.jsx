@@ -5,15 +5,18 @@ import ImageForecast from "./UI/ImageForecast";
 import styles from "./styles.module.css";
 
 function CardForecast({ forecast }) {
+  const { condition, weekday, date, description, max, min } = forecast;
   return (
     <div className={styles.container}>
       <div className={styles.contentContainer}>
-        <ImageForecast typeForecast="cloud" />
-        <h3 className={styles.typeForecast}>Chuvas esparsas</h3>
-        <span className={styles.titleDate}>Qui, 18 de novembro</span>
+        <ImageForecast typeForecast={condition} />
+        <h3 className={styles.typeForecast}>{description}</h3>
+        <span className={styles.titleDate}>
+          {weekday}, {date}
+        </span>
 
         <h4 className={styles.temperature}>
-          Máx: <span>29°</span> Mín: <span> 17°</span>
+          Máx: <span>{max}°</span> Mín: <span>{min}°</span>
         </h4>
       </div>
     </div>

@@ -22,10 +22,16 @@
   flex-wrap: wrap;
 }
 
-/* @media (min-width: 600px)
-{
-  .facet_sidebar
-   {
-    display: none;
-   }
-} */
+.title {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #566cb5;
+  margin-left: 10px;
+}
+
+@media (max-width: 450px) {
+  .containerCardsForecast {
+    width: 100%;
+  }
+}

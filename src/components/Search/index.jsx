@@ -5,7 +5,7 @@ import { ReactComponent as SearchImage } from "../../assets/currently/search.svg
 
 import styles from "./styles.module.css";
 
-function Search({ value, handleChangeInput, currently, loading }) {
+function Search({ search, currently, loadingButton, getWeather }) {
   function getCurrently(currently) {
     switch (currently) {
       case "dia":
@@ -20,18 +20,28 @@ function Search({ value, handleChangeInput, currently, loading }) {
   return (
     <div className={styles.container}>
       <input
-        value={value}
-        onChange={(e) => handleChangeInput(e)}
+        onKeyPress={(e) =>
+          e.key === "Enter" &&
+          search.current.value &&
+          getWeather(search.current.value)
+        }
+        onBlur={() => search.current.value && getWeather(search.current.value)}
+        ref={search}
         className={styles.input}
         type="text"
         placeholder="Insira aqui o nome da cidade"
         autoCapitalize="sentences"
       />
 
-      {loading ? (
+      {loadingButton ? (
         getCurrently(currently)
       ) : (
-        <SearchImage className={styles.iconSearch} />
+        <SearchImage
+          className={styles.iconSearch}
+          onClick={() =>
+            search.current.value && getWeather(search.current.value)
+          }
+        />
       )}
     </div>
   );

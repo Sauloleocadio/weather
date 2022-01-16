@@ -16,7 +16,8 @@
   background: #ffffff;
   text-transform: capitalize;
   align-self: flex-end;
-  border: #ddd solid 1px;
+  border: #ffffff solid 2px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
 }
 
 .icon {
@@ -35,17 +36,31 @@
   color: #5e6376;
 }
 
-
 .input::placeholder {
   text-transform: none;
   color: #363636;
 }
 
+.input:focus {
+  border: #ddd solid 2px;
+}
+
 @keyframes loader {
   0% {
-    transform:  rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform:  rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 620px) {
+  .input {
+    width: 80%;
+  }
+
+  .iconSearch,
+  .icon {
+    display: none;
   }
 }

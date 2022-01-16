@@ -16,7 +16,7 @@
 .titleDay {
   font-size: 30px;
   font-weight: bold;
-  color: #f0cf4e;
+  color: #f9bc46;
 }
 
 .titleNight {
@@ -35,7 +35,7 @@
 .currentlyDay {
   font-size: 26px;
   font-weight: bold;
-  color: #f0cf4e;
+  color: #f9bc46;
   margin-left: 10px;
 }
 
@@ -65,3 +65,15 @@
   height: 32px;
 }
 
+@media (max-width: 620px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .containerCurrently,
+  .containerSearch {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
