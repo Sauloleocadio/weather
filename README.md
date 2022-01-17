@@ -2,8 +2,7 @@
   Desafio HAVAN LABS.
 </h3>
 
-<p>Esse desafio foi feito a partir dos requisitos pedidos pela a empresa baseado na api <a href=" https://hgbrasil.com/status/weather">
-  https://hgbrasil.com/status/weather.</a></p>
+<p>Esse desafio foi feito a partir dos requisitos pedidos pela a empresa baseado na api <a href=" https://hgbrasil.com/status/weather">https://hgbrasil.com/status/weather.</a></p>
 
 <blockquote align="center">“Aprender é a única coisa de que a mente nunca se cansa, nunca tem medo e nunca se arrepende”!</blockquote>
 
