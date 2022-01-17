@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+<h3 align="center">
+  Desafio HAVAN LABS.
+</h3>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Esse desafio foi feito a partir dos requisitos pedidos pela a empresa baseado na api <a href=" https://hgbrasil.com/status/weather">
+  https://hgbrasil.com/status/weather.</a></p>
 
-## Available Scripts
+<blockquote align="center">“Aprender é a única coisa de que a mente nunca se cansa, nunca tem medo e nunca se arrepende”!</blockquote>
 
-In the project directory, you can run:
+<p align="center">
 
-### `yarn start`
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://havanlabs-weatherone.vercel.app">Link do deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Sauloleocadio/weather#-pr%C3%A9-requisitos">Pré-requisito</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Sauloleocadio/weather#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/Sauloleocadio/weather#-licen%C3%A7a">Licença</a>
+</p>
 
-### `yarn test`
+## 🏆 Sobre o desafio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O teste consiste em desenvolver uma aplicação React.js e consome a API da hgbrasil (https://hgbrasil.com/status/weather),tem a finalidade de listar a previsão do tempo, ou pesquisar por o nome de alguma cidade para obter as informações.
 
-### `yarn build`
+## Informações importantes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Segue o link de acesso ao deploy principal[DESAFIO HAVANLABS](https://havanlabs-weatherone.vercel.app).
+2. Segue o link de acesso ao deploy provisório[DESAFIO HAVANLABS](https://havanlabs-weathertwo.vercel.app)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙ Pré-requisitos
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e/ou [Yarn](https://yarnpkg.com/).
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-### `yarn eject`
+- Possuir contas na [Vercel](https://vercel.com/) para deploys de front
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📗 Rodando a Aplicação (web)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone este repositório
+$ git clone https://github.com/Sauloleocadio/weather.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Navegue até a pasta
+$ cd weather
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Instale as dependências
+$ criar um arquivo .env no diretório com as variáveis de ambiente com as key da api da hgbrasil, existe um arquivo explicativo chamado (example.env) no projeto como exemplo.
 
-## Learn More
+# Instale as dependências
+$ yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Execute a aplicação para iniciar o projeto
+$ yarn start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Execute a aplicação para iniciar os tests do projeto
+$ yarn test
 
-### Code Splitting
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📎 Features
 
-### Analyzing the Bundle Size
+- [x] Listagem de previsão do tempo
+- [x] Busca por cidade
+- [x] Detalhamento da previsão
+- [x] Tests dos componentes
+- [x] Componentes controlados e não controlados
+- [x] Error boundary para pegar erros de javascript
+- [x] Deploy da aplicação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Tecnologias
 
-### Making a Progressive Web App
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React
+- Reactjs
+- Axios
+- React-testing-libary
+- Jest
 
-### Advanced Configuration
+## 📝 Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com ♥ by SAULO LEOCÁDIO :wave: , qualquer dúvida [SÓ CHAMAR](https://linktr.ee/sauloleocadio)
