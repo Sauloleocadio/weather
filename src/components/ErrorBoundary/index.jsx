@@ -30,6 +30,14 @@ class ErrorBoundary extends Component {
             Este serviço está temporariamente indisponível.
             <br /> Tente novamente mais tarde.
           </h1>
+          <br />
+          <h1 className={styles.title}>
+            Se o erro persistir entre no link provisório:
+            <br />
+            <a href="https://havanlabs-weathertwo.vercel.app" target="_blank" rel="noreferrer">
+              https://havanlabs-weathertwo.vercel.app
+            </a>
+          </h1>
           <Lottie options={defaultOptionsSad} height={400} width={400} />
         </div>
       );
