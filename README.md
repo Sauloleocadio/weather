@@ -24,8 +24,8 @@ O teste consiste em desenvolver uma aplicação React.js e consome a API da hgbr
 
 ## Informações importantes
 
-1. Segue o link de acesso ao deploy principal[DESAFIO HAVANLABS](https://havanlabs-weatherone.vercel.app).
-2. Segue o link de acesso ao deploy provisório[DESAFIO HAVANLABS](https://havanlabs-weathertwo.vercel.app)
+1. Segue o link de acesso ao deploy principal [DESAFIO HAVANLABS PRINCIPAL](https://havanlabs-weatherone.vercel.app)
+2. Segue o link de acesso ao deploy provisório [DESAFIO HAVANLABS PROVISÓRIO](https://havanlabs-weathertwo.vercel.app)
 
 ## ⚙ Pré-requisitos
 
